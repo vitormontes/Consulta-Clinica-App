@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;#F5F7FA&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s4">&lt;!-- Cabeçalho --&gt;</span>
+    <span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/header&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;180dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#1976D2&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/txtClinica&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Clínica do Vitor&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;28sp&quot;</span>
+            <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+            <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintBottom_toTopOf</span><span class="s2">=&quot;@id/txtTitulo&quot;</span>
+            <span class="s1">app:layout_constraintVertical_chainStyle</span><span class="s2">=&quot;packed&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/txtTitulo&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;24dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;6dp&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Minhas consultas&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;#E3F2FD&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+            <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+            <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@id/txtClinica&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+
+    <span class="s4">&lt;!-- Título da lista --&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/txtProximas&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;24dp&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Próximas consultas&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;#1F2937&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;20sp&quot;</span>
+        <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@id/header&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+
+    <span class="s4">&lt;!-- Lista de consultas --&gt;</span>
+
+    <span class="s0">&lt;androidx.recyclerview.widget.RecyclerView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/recyclerConsultas&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;0dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;12dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:clipToPadding</span><span class="s2">=&quot;false&quot;</span>
+        <span class="s1">android:paddingBottom</span><span class="s2">=&quot;100dp&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@id/txtProximas&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+
+    <span class="s4">&lt;!-- Botão adicionar --&gt;</span>
+
+    <span class="s0">&lt;com.google.android.material.floatingactionbutton.FloatingActionButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/fabAdicionar&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;24dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;24dp&quot;</span>
+        <span class="s1">android:contentDescription</span><span class="s2">=&quot;Adicionar consulta&quot;</span>
+        <span class="s1">android:src</span><span class="s2">=&quot;@android:drawable/ic_input_add&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#1976D2&quot;</span>
+        <span class="s1">app:tint</span><span class="s2">=&quot;#FFFFFF&quot;</span>
+        <span class="s1">app:elevation</span><span class="s2">=&quot;8dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>
